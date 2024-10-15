@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+       .class{
+        background-color: rgb(223, 240, 255);
+        height: 300px;
+        width: 10%;
+       
+     
+       }
+       .h1{
+        text-align: center;
+        position: relative;
+        top: -300px;
+        color: brown;
+        
+       }
+       .input{
+       
+      background-color: aliceblue;
+   
+       }
+       .p{
+        padding-top:100px 200px ;
+      background-color: aliceblue;
+       }
+       input{
+        position: relative;
+        top: -290px;
+        padding-bottom: 70px;
+        padding-right: 20%;
+       display: block;
+        margin: 10px auto;
+       }
+       .id{
+        position: relative;
+        top: -270px;
+        padding-bottom: 70px;
+        padding-right: 20%;
+       display: block;
+        margin: 10px auto;
+        border: white solid 6px;
+      
+       }
+       span{
+       color: brown;
+       font-weight: 900;
+       font-size: 30px;
+     
+  
+       
+       }
+
+       
+       .p{
+        
+        height: 100px;
+        width: 61%;
+        background-color: aliceblue;
+        border: 0.5px solid black;
+        margin: 10px auto;
+       }
+       button{
+       
+      display: block;
+        height: 40px;
+        width: 100px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        position: relative;
+    top: 20px;
+    left: 20px;
+
+        
+
+
+       }
+
+      
+       
+       button:hover{
+        background-color: azure;
+        box-shadow: 0px 0px 7px 5px gray;
+        transition: 0.5s;
+       }
+      
+       
+       @media screen and (max-width:500px){
+        button{
+        
+        background-color: rgb(0, 255, 170);
+        border-radius: 100px;
+        align-items: center;
+        justify-content: center;
+ margin: 5px 2%;
+        }
+        input{
+        position: relative;
+        top: -300px;
+       
+       }
+       .id{
+        position: relative;
+        top: -290px;
+        
+      
+       }
+        span{
+       display: none;
+       
+     
+  
+       
+       }
+       .h1{
+        font-size: 20px;
+       }
+       .class{
+        background-color: white;
+        
+     
+       }
+       button{
+       
+       display: inline;
+         height: 40px;
+         width: 140px;
+         background-color: aquamarine;
+         border-radius: 10px;
+         position: relative;
+        top: 100%;
+        left: 50px;
+ 
+         
+ 
+ 
+        }
+
+       }
+    </style>
+</head>
+<body>
+   
+    
+
+
+
+
+<div class="class">
+<span>HOME</span>
+  <button id="btn1" onclick="upperwordc()">uppercase</button>
+   <button id="btn1" onclick="lowerwordc()">lowercase</button>
+   <button id="btn1" onclick="charcount()">count</button>
+   <button id="btn1" onclick="wordcount()">wordcount</button>
+</div>
+<div class="a12">
+    <h1 class="h1" >I love javascript</h1>
+    <input type="text" placeholder="enter the text here......."  id="input">
+    <input class="id" type="text" placeholder="ans:" id="output">
+
+  </div>
+
+
+   <script>
+    const inputele=document.getElementById('input');
+    const outputele=document.getElementById('output');
+    function upperwordc()
+    {
+   
+   
+     outputele.value=inputele.value.toUpperCase();
+    }
+    function lowerwordc()
+    {
+   
+     const inputtext=inputele.value;
+     outputele.value=inputtext.toLowerCase();
+    }
+    function charcount()
+    {
+   
+        inputval=inputele.value.split(" ").length;
+        outputele.value="word count:"+inputval;
+    }
+    function wordcount()
+    {
+   
+        outputele.value=inputele.value.length;
+        
+    }
+   </script>
+</body>
+</html>
+  
